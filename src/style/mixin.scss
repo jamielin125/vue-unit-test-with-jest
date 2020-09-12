@@ -1,0 +1,17 @@
+@mixin font_awesome($unicode, $weight){
+  content: $unicode;
+  font-family: 'Font Awesome 5 Free';
+  font-weight: $weight;
+}
+
+@mixin font_size_weight($size, $weight){
+  font-size: $size;
+  font-weight: $weight;
+}
+
+@mixin absolute_center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

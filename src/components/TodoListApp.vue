@@ -1,12 +1,23 @@
 <template>
   <div class="todo-list">
-    todo-list app
+    <Header></Header>
+    <CreateForm></CreateForm>
+    <TodoList></TodoList>
   </div>
 </template>
 
 <script>
+import Header from '@/components/Header'
+import TodoList from '@/components/TodoList'
+import CreateForm from '@/components/CreateForm'
+
 export default {
   name: 'TodoListApp',
+  components: {
+    CreateForm,
+    Header,
+    TodoList,
+  },
   props: {
     msg: String,
   },
